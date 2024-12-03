@@ -9,11 +9,6 @@ fun recoverInstructions(corruptedInstructions: String, regex: Regex): List<Strin
         .toList()
 }
 
-fun <T> debugPipeline(value: T): T {
-    println(value)
-    return value
-}
-
 fun executeInstruction(instruction: String): Int {
     return instruction
         .slice(4..<instruction.length -1)
